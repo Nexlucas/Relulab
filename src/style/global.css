@@ -6,3 +6,13 @@
     border: none;
     background: none;
 }
+
+:root{
+    --color-primario: #015E8F;
+    --color-segundario: #004794;
+    --color-tercerario: #00283D;
+    --color-branco: #FFFFFF;
+    --color-preto: #000000;
+
+    --font-principal: "Roboto", sans-serif;
+}
