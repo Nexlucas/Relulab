@@ -14,7 +14,6 @@ span{
     padding: 40px 64px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     align-items: center;
     font-size: 16px;
     font-family: var(--font-principal);
@@ -40,17 +39,15 @@ span{
 .header-2{
     padding: 90px 64px;
     display: flex;
-    width: 100%;
+    justify-content: center;
     background-color: #F4F4F4;
-    gap: 80px;
-    flex-wrap: wrap;
-    
+    gap: 80px;    
 }
 
 .header-img > img{
     width: 100%;
     max-width: 600px;
-    height: auto;
+    height: 600px;
 }
 
 
@@ -69,7 +66,7 @@ span{
 .header-text > h3{
     color: var(--color-tercerario);
     font-size: 18px;
-    font-weight: 400;
+    font-weight: normal;
     
 }
 .email{
@@ -104,6 +101,7 @@ span{
 }
 .header-3{
     display: flex;
+    justify-content: center;
     gap: 80px;
     padding: 112px 64px;
     font-family: var(--font-principal);
@@ -121,8 +119,9 @@ span{
     color: var(--color-tercerario);
 }
 .header-img3{
-    width: 600px;
-    height: 616px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
 }
 .header-4{
     background-color: #F4F4F4;
@@ -216,4 +215,124 @@ span{
 .perso-nome > .formacao{
     font-size: 16px;
     font-weight: normal;
+}
+
+.header-5{
+    display: flex;
+    flex-direction: column;
+    padding: 112px 64px;
+    font-family: var(--font-principal);
+    gap: 80px;
+}
+
+.header-5 > .entre-contato > h1{
+    font-size: 48px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--color-primario);       
+}
+.header-5 > .entre-contato > h3{
+    font-size: 16px;
+    text-align: center;
+    font-weight: normal;
+    color: var(--color-tercerario);
+}
+.contatos{
+    display: flex;
+    justify-content: center;
+    gap: 450px;
+}
+
+.contatos > div > h1{
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--color-primario);
+}
+.contatos > div > h3{
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--color-tercerario);
+}
+.contatos > div > img{
+    width: 48px;
+    height: 48px;
+}
+
+.contatos > .telefone,.contatos > .email{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.footer{
+    padding: 64px 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    font-family: var(--font-principal);
+}
+.footer > div{
+    display: flex;
+    flex-direction: column;
+  
+    align-items: center;
+    gap: 32px;
+    font-family: var(--font-principal);
+}
+.footer > div > img{
+    width: 84px;
+    height: 37px;
+}
+.footer > div > nav {
+    display: flex;
+    gap: 32px;
+    color: var(--color-segundario);
+}
+.footer > .linha{
+    padding: 64px 64px;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid black;
+    justify-content: space-between;    
+}
+
+.linha > h3,nav{
+    font-size: 14px;
+    font-weight: normal;
+    color: var(--color-segundario);
+}
+
+@media (max-width: 1024px){
+
+    .header-2,
+    .header-3{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .header-text > h1{
+        font-size: 42px;
+    }
+
+    .num{
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .text{
+        justify-content: center;
+        gap: 60px;
+    }
+
+    .bnt-email{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bnt-email > input,
+    .bnt-email > button{
+        width: 100%;
+        max-width: 400px;
+    }
 }
