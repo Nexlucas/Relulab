@@ -54,10 +54,11 @@ span{
 .header-text{
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    justify-content: center;
     font-family: var(--font-principal);
     gap: 24px;
 }
+
 .header-text > h1 {
     color: var(--color-primario);
     font-size: 56px;
@@ -106,17 +107,27 @@ span{
     padding: 112px 64px;
     font-family: var(--font-principal);
 }
-.num{
+.resultados{
     display: flex;
-    font-size: 38px;
-    gap: 200px;
+    gap: 250px;
+}
+.resultados > .pesquias-120 > h1, .resultados > .pessoas-5000 > h1{
+    font-size: 48px;
     color: var(--color-segundario);
 }
-.text{
-    display: flex;
-    gap: 160px;
+.resultados > .pesquias-120 > h3, .resultados > .pessoas-5000 > h3{
+    font-size: 16px;
     font-weight: normal;
     color: var(--color-tercerario);
+}
+
+.pesquias-120{
+    display: flex;
+    flex-direction: column;
+}
+.pessoas-5000{
+    display: flex;
+    flex-direction: column;
 }
 .header-img3{
     width: 100%;
@@ -240,7 +251,7 @@ span{
 .contatos{
     display: flex;
     justify-content: center;
-    gap: 450px;
+    gap: 200px;
 }
 
 .contatos > div > h1{
@@ -318,6 +329,12 @@ span{
     .num{
         justify-content: center;
         gap: 80px;
+    }
+    .contatos{
+        flex-wrap: wrap;
+    }
+    .personas{
+        flex-wrap: wrap;
     }
 
     .text{
